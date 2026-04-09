@@ -2,7 +2,7 @@
 
 int main()
 {
-  int scores [10]; // junk data
+  // int scores [10]; // junk data
 
   // for (size_t i {}; i < 10; ++i) {
   //   std::cout << "scores[" << i << "]: " << scores[i] << std::endl;
@@ -41,11 +41,26 @@ int main()
   //   std::cout << "families[" << i << "]: " << families[i] << std::endl;
   // }
 
-  int class_sizes [] {30, 25, 35, 20, 40};
+  // int class_sizes [] {30, 25, 35, 20, 40};
 
-  for (auto value: class_sizes) {
-    std::cout << "class_sizes: " << value << std::endl;
-  }
+  // for (auto value: class_sizes) {
+  //   std::cout << "class_sizes: " << value << std::endl;
+  // }
+
+  // int scores [] {2,5, 8, 11};
+
+  // int sum {0};
+
+  // for (int element: scores) {
+  //   sum += element;
+  // }
+
+  // std::cout << "Score sum: " << sum << std::endl;
+
+  
+
+
+
 
   return 0;
 }
