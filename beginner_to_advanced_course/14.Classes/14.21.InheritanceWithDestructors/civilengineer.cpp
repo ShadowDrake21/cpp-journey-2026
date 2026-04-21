@@ -26,6 +26,11 @@ CivilEngineer::CivilEngineer(std::string_view fullname, int age, std::string_vie
 //     std::cout << "Civil Engineer custom constructor called" << std::endl;
 // }
 
+CivilEngineer::CivilEngineer(const CivilEngineer &source) : Engineer(source), m_speciality(source.m_speciality)
+{
+    std::cout << "Civil Engineer copy constructor called" << std::endl;
+}
+
 std::ostream &operator<<(std::ostream &out, const CivilEngineer &civilEngineer)
 {
     out << "Civil Engineer: " << civilEngineer.get_full_name()
@@ -37,4 +42,7 @@ std::ostream &operator<<(std::ostream &out, const CivilEngineer &civilEngineer)
     return out;
 }
 
-CivilEngineer::~CivilEngineer() {}
+CivilEngineer::~CivilEngineer()
+{
+    std::cout << "Civil Engineer destructor called" << std::endl;
+}

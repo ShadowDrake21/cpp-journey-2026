@@ -12,7 +12,12 @@ int main()
     // Engineer eng1("Tony Stark", 45, "10880 Malibu Point", 5);
     // std::cout << eng1 << std::endl;
 
-    std::cout << "------------------------------" << std::endl;
-    CivilEngineer civilEng1("Jane Doe", 30, "123 Main St", 3, "Bridge Construction");
-    std::cout << civilEng1 << std::endl;
+    // Engineer eng2(eng1);
+    // std::cout << "eng2: " << eng2 << std::endl;
+
+    CivilEngineer eng1("Tony Stark", 45, "10880 Malibu Point", 5, "Structural Engineering");
+    std::cout << eng1 << std::endl;
+
+    CivilEngineer eng2(eng1);
+    std::cout << "eng2: " << eng2 << std::endl;
 }

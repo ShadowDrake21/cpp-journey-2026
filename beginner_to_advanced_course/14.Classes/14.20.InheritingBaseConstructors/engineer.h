@@ -4,10 +4,13 @@
 
 class Engineer : public Person
 {
+    using Person::Person;
     friend std::ostream &operator<<(std::ostream &out, const Engineer &engineer);
 
 public:
-    Engineer();
+    // Engineer();
+    // Engineer(std::string_view fullname, int age, std::string_view address, int contract_count);
+    // Engineer(const Engineer &source);
     Engineer(std::string_view fullname, int age, std::string_view address, int contract_count);
     ~Engineer();
 

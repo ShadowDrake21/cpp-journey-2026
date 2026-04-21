@@ -11,6 +11,7 @@ class Person
 public:
     Person();
     Person(std::string_view fullname, int age, std::string_view address);
+    Person(const Person &source); // not inheritable
     ~Person();
 
     std::string get_full_name() const
